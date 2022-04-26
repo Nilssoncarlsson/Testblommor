@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Shopping Cart</title>
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  
+  </head>
+  <body>
+
+ </header>
+ 
+       
+ <main>
+     
+    <div class="container"> 
+   <h1>Bröllopsbuketter</h1>
+   <p>Blommor är för många en viktig del av bröllopet som höjer stämningen och betonar temat under den stora dagen. 
+     Vi hjälper er med allt som har med bröllopsblommor att göra och visar förslag och inspiration utifrån era önskemål.
+     <br>Kom in till oss i butiken eller ring oss på 033-333333 för att få personlig rådgivning och prisförslag.</p>
+
+     <section class="container-symbol">
+      <!--Används som den containern där alla bootstrapsymboler med text ligger i-->
+      <section class="container-item">
+        <!--Contatainer för bootsrapsymbol-->
+        <i class="bi-truck"></i>
+        <!--Lönk till bootsrapsymbolen-->
+        <p class="bootstrap-text">Leverans samma dag</p>
+        <!--Text till bootsrapsymbol-->
+      </section>
+    
+      <section class="container-item">
+        <i class="bi-credit-card"></i>
+        <p class="bootstrap-text">Betala med Swish</p>
+      </section>
+    
+      <section class="container-item">
+        <i class="bi-check-circle"></i>
+        <p class="bootstrap-text">Nöjd kundgaranti</p>
+      </section>
+    </section>
+  
+   <div id="alerts"></div>
+<div class="productcont">
+        <div class="product">
+            <h3 class="productname">Liljor</h3>
+            <p>En trendig men ändå klassisk vit bukett som för tankarna till ängsblommor. 
+              Innehåller luktärter, rosor, tistel, aster och löjtnantshjärta.</p>
+            <p class="price">599kr</p>
+            <button class="addtocart">Lägg till i varukorg</button>
+        </div>
+        <div class="product">
+            <h3 class="productname">Dahlior</h3>
+            <p>Vackra pasteller – rosa, lime och aprikos. Till vänster en modern bukett med asparagus, 
+              trädgårdsros, daggkåpa, hortensia, röllika och kvistros. Till höger en läckert droppformad brudbukett med risp, 
+              krysantemum, rosor, kvistrosor och limonium.</p>
+            <p class="price">850kr</p>
+            <button class="addtocart">Lägg till i varukorg</button>
+        </div>
+        <div class="product">
+            <h3 class="productname">Rosor</h3>
+            <p>En färgglad, romantisk brudbukett i rött och lila. Innehåller rosor med klematis och hortensia.</p>
+            <p class="price">1050kr</p>
+            <button class="addtocart">Lägg till i varukorg</button>
+        </div>
+        </div>
+        <div class="cart-container">
+          <h2>Varukorg</h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Produkt</strong></th>
+              <th><strong>Pris</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Varor</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>kr<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Töm korg</button>
+            <button id="checkout">Till Betalning</button>
+          </div>
+        </div>
+</div>
+
+
+ </main>
+ 
+
+
+        <script  src="./js/script.js"></script> 
+  </body>
+</html>
